@@ -1,0 +1,37 @@
+{
+  "name": "dodo-captcha",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "types": "./dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c rollup.config.mjs",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "captcha"
+  ],
+  "homepage": "https://github.com/szymonbvg/dodo-captcha",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/szymonbvg/dodo-captcha.git"
+  },
+  "author": "szymonbvg",
+  "license": "MIT",
+  "description": "Simple CAPTCHA based on websocket communication for your backend",
+  "dependencies": {
+    "sharp": "0.33.4",
+    "ws": "8.18.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.4",
+    "@types/node": "^20.14.10",
+    "@types/ws": "^8.5.10",
+    "rollup": "^4.18.0",
+    "rollup-plugin-dts": "^6.1.1",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.5.3"
+  }
+}
